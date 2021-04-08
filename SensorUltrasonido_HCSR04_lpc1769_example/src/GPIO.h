@@ -26,7 +26,7 @@
 #define DIR_ENTRADA		ENTRADA
 
 /*	Para utilizar sensores */
-#define CANT_ENTRADAS_DIG	1	//modificar esto
+#define CANT_ENTRADAS_DIG	0	//modificar esto
 #if CANT_ENTRADAS_DIG >0
 #define CANT_REBOTES		3
 typedef struct{
