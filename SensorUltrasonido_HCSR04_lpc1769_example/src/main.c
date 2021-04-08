@@ -1,7 +1,7 @@
 /*
 ===============================================================================
  Name        : SensorUltrasonido_HCSR04_lpc1769_example.c
- Author      : $(author)
+ Author      : ealegremendoza
  Version     :
  Copyright   : $(copyright)
  Description : main definition
@@ -29,10 +29,12 @@ int main(void)
     	printf("M %d cm\n", medicion);
     	if(medicion<5)
     	{
+    		// Si la distancia es menor a 5cm enciende el LED
     		GPIO_Set(PIN_LED_2,1);
     	}
     	else
     	{
+    		// Si la distancia es mayor a 5cm apaga el LED
     		GPIO_Set(PIN_LED_2,0);
     	}
     }

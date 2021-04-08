@@ -14,7 +14,7 @@ void SensorUltrasonido_Init(void)
 	GPIO_Func(PIN_SENSORULTRASONIDO_TRIG,FUNC_GPIO);
 	GPIO_Dir(PIN_SENSORULTRASONIDO_TRIG,DIR_SALIDA);
 
-	/*	CONFIGURO EL PIN CAP0.0
+	/*	CONFIGURO EL PIN CAP2.0
 	 *  El pin CAPn.m es el único que tiene esta funcionalidad 	*/
 	GPIO_Func(PIN_SENSORULTRASONIDO_ECHO,FUNC_FUNC3);
 
@@ -42,7 +42,7 @@ void TIMER2_Init(void)
 	T2TCR = 2;	//RESET TIMER
 	TIMER2.PR=CCLK/1000000-1;// Prescaler = 100-1 (cuenta hasta el 0)
 
-	/*	CONFIGURO EL PIN CAP0.0
+	/*	CONFIGURO EL PIN CAP2.0
 	 *  El pin CAPn.m es el único que tiene esta funcionalidad 	*/
 	//GPIO_Func(PIN_SENSORULTRASONIDO_ECHO,FUNC_FUNC3);
 
