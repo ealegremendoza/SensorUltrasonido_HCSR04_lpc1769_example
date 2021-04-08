@@ -1,4 +1,4 @@
-#   TIMERS lpc1769 Ejemplo
+#   Sensor Ultrasónico lpc1769 Ejemplo
 Proyecto ejemplo para controlar el sensor ultranónico HC-SR04 con el micro controlador LPCXpresso lpc1769.
 El ejemplo enciende un led cuando se coloca un obstáculo a menos de 5cm de distancia del sensor ultrasónico,
 
